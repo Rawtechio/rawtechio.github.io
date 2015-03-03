@@ -1,0 +1,13 @@
+{
+  "name": "Flask Skeleton",
+  "description": "A bare bones Flask app for deployment to Heroku",
+  "repository": "https://github.com/aaronbassett/Flask-skeleton",
+  "keywords": ["python", "flask"],
+  "env": {
+    "SECRET_KEY": {
+        "description": "Required for sessions and other Flask stuffs",
+        "required": true,
+        "value": "t8yamo017rg6*ukr+k@&l+&$3mx%4^c&^16l_i"
+    }
+  }
+}

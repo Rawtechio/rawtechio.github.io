@@ -1,0 +1,15 @@
+{
+  "name": "Flask-skeleton",
+  "version": "0.0.1",
+  "homepage": "https://github.com/aaronbassett/Flask-skeleton",
+  "authors": [
+    "Aaron Bassett <me@aaronbassett.com>"
+  ],
+  "description": "Bare bones Flask app for deployment on Heroku",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "2.1.3",
+    "bootstrap": "3.3.2"
+  }
+}
