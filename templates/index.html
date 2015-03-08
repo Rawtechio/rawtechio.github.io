@@ -64,7 +64,7 @@
     <div class="container">
       <section class="row">
         <div class="col-xs-12">
-          <h1>Hello, Rawtech.io is the technology consultancy of <a href="http://github.com/aaronbassett">Aaron Bassett</a>. I help companies imagine, plan and develop scalable, reliable and beautiful applications of all sizes.</h1>
+          <h1>Hello! Rawtech.io is the technology consultancy of <a href="http://github.com/aaronbassett">Aaron Bassett</a>. I help companies imagine, plan and develop scalable, reliable and beautiful applications of all sizes.</h1>
         </div>
       </section>
     </div>
@@ -145,25 +145,23 @@
   <div class="container">
     <section id="projects">
       <h1>Past &amp; current projects</h1>
+      <hr />
+
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        </ol>
-
         <div class="carousel-inner" role="listbox">
           <div class="row item active">
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='images/work/future-cities-website-development.png') }}" class="img-responsive" />
               <h2>Future Cities</h2>
+              <div class="description">
               <p>I aided in the development of <a href="http://data.glasgow.gov.uk/">Glasgow city council's open data platform</a>. Working on everything from the deployment scripts to the application backend and client-side styling.</p>
-              <aside>
+              </div>
+              <aside class="well well-sm">
                 <ul>
-                  <li><a href="https://www.chef.io/">#Chef</a></li>
-                  <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
-                  <li><a href="http://ckan.org/">#CKAN</a></li>
-                  <li><a href="https://www.python.org/">#Python</a></li>
+                  <li><a href="https://www.chef.io/" class="label label-primary">#Chef</a></li>
+                  <li><a href="https://www.vagrantup.com/" class="label label-primary">#Vagrant</a></li>
+                  <li><a href="http://ckan.org/" class="label label-primary">#CKAN</a></li>
+                  <li><a href="https://www.python.org/" class="label label-primary">#Python</a></li>
                 </ul>
               </aside>
             </div>
@@ -171,14 +169,16 @@
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='images/work/twig-tigtag-django-python.jpg') }}" class="img-responsive" />
               <h2>3 &times; Bett Award winner</h2>
+              <div class="description">
               <p>As <a href="http://www.twig-world.com">Twig's</a> Senior Technical Lead for 3 years I was was responsible for planning, architecting and developing their core products including <a href="http://www.twig-world.com">Twig World</a>, <a href="http://www.tigtagworld.co.uk/">Tigtag</a> and the Twig Box.</p>
-              <aside>
+              </div>
+              <aside class="well well-sm">
                 <ul>
-                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
-                  <li><a href="https://www.python.org/">#Python</a></li>
-                  <li><a href="http://www.videojs.com/">#Video.js</a></li>
-                  <li><a href="http://getbootstrap.com/">#Bootstrap</a></li>
-                  <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
+                  <li><a href="https://www.djangoproject.com/" class="label label-primary">#Django</a></li>
+                  <li><a href="https://www.python.org/" class="label label-primary">#Python</a></li>
+                  <li><a href="http://www.videojs.com/" class="label label-primary">#Video.js</a></li>
+                  <li><a href="http://getbootstrap.com/" class="label label-primary">#Bootstrap</a></li>
+                  <li><a href="https://www.vagrantup.com/" class="label label-primary">#Vagrant</a></li>
                 </ul>
               </aside>
             </div>
@@ -186,14 +186,16 @@
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='images/work/sauchiehall-map-development.png') }}" class="img-responsive" />
               <h2>You are Sauchiehall</h2>
+              <div class="description">
               <p>With a <i>super</i> tight deadline I helped design, develop and deploy the interactive mapping application for <a href="http://www.sauchiehall.net/">sauchiehall.net</a>. Behind the scenes it uses a REST API powered by Python and Coffeescript.</p>
-              <aside>
+              </div>
+              <aside class="well well-sm">
                 <ul>
-                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
-                  <li><a href="https://www.python.org/">#Python</a></li>
-                  <li><a href="http://www.django-rest-framework.org/">#REST</a></li>
-                  <li><a href="http://coffeescript.org">#Coffeescript</a></li>
-                  <li><a href="http://gulpjs.com/">#Gulp</a></li>
+                  <li><a href="https://www.djangoproject.com/" class="label label-primary">#Django</a></li>
+                  <li><a href="https://www.python.org/" class="label label-primary">#Python</a></li>
+                  <li><a href="http://www.django-rest-framework.org/" class="label label-primary">#REST</a></li>
+                  <li><a href="http://coffeescript.org" class="label label-primary">#Coffeescript</a></li>
+                  <li><a href="http://gulpjs.com/" class="label label-primary">#Gulp</a></li>
                 </ul>
               </aside>
             </div>
@@ -203,11 +205,13 @@
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='images/work/kala-opensource-data-portal-django-python.png') }}" class="img-responsive" />
               <h2>Kala</h2>
+              <div class="description">
               <p><strong>In development:</strong> Kala is a simple, extensible, opensource replacement for CKAN. Using modern technologies and best practices Kala aims to make it easier than ever for governments and other organisations to share their open data internally or with the world.</p>
-              <aside>
+              </div>
+              <aside class="well well-sm">
                 <ul>
-                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
-                  <li><a href="https://www.python.org/">#Python</a></li>
+                  <li><a href="https://www.djangoproject.com/" class="label label-primary">#Django</a></li>
+                  <li><a href="https://www.python.org/" class="label label-primary">#Python</a></li>
                 </ul>
               </aside>
             </div>
@@ -215,12 +219,14 @@
             <div class="col-md-4">
               <img src="{{ url_for('static', filename='images/work/digital-artisans-community-slack.png') }}" class="img-responsive" />
               <h2>Digital Artisans</h2>
+              <div class="description">
               <p>A digital community <a href="http://www.artisans.digital/">whose identity is rather tongue in cheek</a>. It has now become the defacto home for the <a href="http://rookieoven.com/">RookieOven</a> co-working space chit-chat. I also sometimes write Slack bots to perform <a href="https://github.com/DigitalArtisans/Gifpybot">important tasks</a>.</p>
-              <aside>
+              </div>
+              <aside class="well well-sm">
                 <ul>
-                  <li><a href="http://flask.pocoo.org/">#Flask</a></li>
-                  <li><a href="http://slack.com">#Slack</a></li>
-                  <li><a href="https://www.youtube.com/watch?v=cRnhOtRn1a0">#BeardOil</a></li>
+                  <li><a href="http://flask.pocoo.org/" class="label label-primary">#Flask</a></li>
+                  <li><a href="http://slack.com" class="label label-primary">#Slack</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=cRnhOtRn1a0" class="label label-primary">#BeardOil</a></li>
                 </ul>
               </aside>
             </div>
@@ -228,10 +234,14 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <div class="row">
-      <div class="col-sm-12">
-        <p>I’m a digital problem solver. I develop bespoke software solutions, advise on technology strategy, aid in the tendering process and work with companies to scale their business. In a nutshell I use technology to make my client's businesses better.</p>
+  <div id="pita-divider">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>I’m a digital problem solver. I develop bespoke software solutions, advise on technology strategy, aid in the tendering process and work with companies to scale their business. In a nutshell I use technology to make my client's businesses better.</p>
+        </div>
       </div>
     </div>
   </div>
