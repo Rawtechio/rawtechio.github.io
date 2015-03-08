@@ -33,6 +33,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href='{{ url_for('static', filename='components/bootstrap/dist/css/bootstrap.min.css') }}' rel='stylesheet' type='text/css'>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href='{{ url_for('static', filename='css/app.css') }}' rel='stylesheet' type='text/css'>
 
@@ -41,147 +43,205 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <script src="{{ url_for('static', filename='iconic/js/iconic.min.js') }}"></script>
   </head>
 
   <body>
 
-  <div class="container-fluid">
-    <header class="row">
-      <div class="col-xs-12">
-        <h1>Rawtech.io Limited</h1>
-        <h2>Engineering <span id="✓">a better web</span></h2>
-      </div>
-    </header>
+  <div class="lowpoly">
+    <div class="container">
+      <header class="row">
+        <div class="col-xs-12">
+          <h1>Rawtech.io</h1>
+          <h2>Engineering <span id="✓">a better web</span></h2>
+        </div>
+      </header>
+    </div>
+  </div>
 
-    <section class="row leader">
-      <div class="col-xs-12">
-        <h1>Hello, Rawtech.io is the consulting business of <a href="http://github.com/aaronbassett">Aaron Bassett</a>. I help companies imagine, plan and develop scalable, reliable and beautiful applications of all sizes.</h1>
-      </div>
-    </section>
+  <div class="leader">
+    <div class="container">
+      <section class="row">
+        <div class="col-xs-12">
+          <h1>Hello, Rawtech.io is the technology consultancy of <a href="http://github.com/aaronbassett">Aaron Bassett</a>. I help companies imagine, plan and develop scalable, reliable and beautiful applications of all sizes.</h1>
+        </div>
+      </section>
+    </div>
+  </div>
 
+  <div class="container">
     <section class="row services">
       <div class="col-sm-4">
+        <img class="iconic iconic-fluid" src="{{ url_for('static', filename='iconic/svg/smart/beaker.svg') }}" />
         <h2>Development</h2>
         <p>I've been professionally developing for the web for over a decade. My work has been featurd in hundreds of publications and visited by millions of people. I have the experience and know-how to turn any idea into reality.</p>
       </div>
 
       <div class="col-sm-4">
+        <img class="iconic iconic-fluid" src="{{ url_for('static', filename='iconic/svg/smart/rocket.svg') }}" />
         <h2>Reliability</h2>
-        <p>I don't treat testing as a second class citizen. Not only does this ensure our code works, but that it keeps on working, ensuring your investment is extensible and future proofed.</p>
+        <p>I don't treat testing as a second class citizen. Not only does this improve our code quality, but it also helps future proof your investment. Ensuring that your project is easier, faster and cheap to maintain and extend as your requirements grow.</p>
       </div>
 
       <div class="col-sm-4">
+        <img class="iconic iconic-fluid" src="{{ url_for('static', filename='iconic/svg/smart/brain.svg') }}" />
         <h2>Strategy</h2>
-        <p>I can advise you on how to best leverage existing and emerging technoligies to provide the most value for your business. I can even help translate the most impenetrable technical document into plain English.</p>
+        <p>I can advise you on how to best leverage existing and emerging technoligies to provide the optimum value for your business. I can even help translate the most impenetrable technical document into plain English.</p>
       </div>
     </section>
+  </div>
 
-    <section class="row" id="❤">
-      <div class="col-xs-12">
-        <blockquote>
-          <p>Aaron is a valuable resource to any who would choose to retain his talent and services.</p>
-          <footer>
-            <cite>B. Wilcox, Vice President of <a href="http://www.carolina.com/">Carolina Science Online</a></cite>
-          </footer>
-        </blockquote>
+  <div class="quotes-wrapper">
+    <div class="container">
+      <section class="row" id="❤">
+        <div class="col-xs-12">
+          <blockquote>
+            <p>Aaron is a valuable resource to any who would choose to retain his talent and services.</p>
+            <footer>
+              <cite>B. Wilcox, Vice President of <a href="http://www.carolina.com/">Carolina Science Online</a></cite>
+            </footer>
+          </blockquote>
 
-        <blockquote>
-          <p>Aaron was instrumental in developing one of 2Fluid's core products and allowing me to take it to market with successful sales following shortly after.</p>
-          <footer>
-            <cite>S. Plummer, Operations Director, Scotland at Common Purpose</cite>
-          </footer>
-        </blockquote>
+          <blockquote>
+            <p>Aaron was instrumental in developing one of 2Fluid's core products and allowing me to take it to market with successful sales following shortly after.</p>
+            <footer>
+              <cite>S. Plummer, Operations Director, Scotland at Common Purpose</cite>
+            </footer>
+          </blockquote>
 
-        <blockquote>
-          <p>Aaron is one of the few web developers I've ever met who seeks to clarify rather than mystify the subject for clients.</p>
-          <footer>
-            <cite>M. Feeley, communications consultant</cite>
-          </footer>
-        </blockquote>
+          <blockquote>
+            <p>Aaron is one of the few web developers I've ever met who seeks to clarify rather than mystify the subject for clients.</p>
+            <footer>
+              <cite>M. Feeley, communications consultant</cite>
+            </footer>
+          </blockquote>
 
-        <blockquote>
-          <p>Aaron is a seriously smart cookie with incredible all&ndash;round knowledge of web and digital technologies allied to great energy and motivation.</p>
-          <footer>
-            <cite>L. Hughes, Director at <a href="http://www.fuzzylogicdigital.com">Fuzzy Logic Digital</a></cite>
-          </footer>
-        </blockquote>
+          <blockquote>
+            <p>Aaron is a seriously smart cookie with incredible all&ndash;round knowledge of web and digital technologies allied to great energy and motivation.</p>
+            <footer>
+              <cite>L. Hughes, Director at <a href="http://www.fuzzylogicdigital.com">Fuzzy Logic Digital</a></cite>
+            </footer>
+          </blockquote>
 
-        <blockquote>
-          <p>Aaron is may favourite woolly web genius.</p>
-          <footer>
-            <cite>S. Mackenzie, Writer &amp; Strategist</cite>
-          </footer>
-        </blockquote>
+          <blockquote>
+            <p>Aaron is may favourite woolly web genius.</p>
+            <footer>
+              <cite>S. Mackenzie, Writer &amp; Strategist</cite>
+            </footer>
+          </blockquote>
 
-        <blockquote>
-          <p>Aaron has an incredible knowledge of the web and is always sure to have multiple good ideas about how to solve any given problem.</p>
-          <footer>
-            <cite>K. Brolly, Founder/Director at <a href="http://www.thisisbraw.co.uk/">Braw Software</a></cite>
-          </footer>
-        </blockquote>
-      </div>
-    </section>
+          <blockquote>
+            <p>Aaron has an incredible knowledge of the web and is always sure to have multiple good ideas about how to solve any given problem.</p>
+            <footer>
+              <cite>K. Brolly, Founder/Director at <a href="http://www.thisisbraw.co.uk/">Braw Software</a></cite>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
+    </div>
+  </div>
 
-    <section class="row">
+  <div class="container">
+    <section id="projects">
       <h1>Past &amp; current projects</h1>
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-      <div class="col-md-3">
-        <h2>Future Cities</h2>
-        <p>I aided in the development of <a href="http://data.glasgow.gov.uk/">Glasgow city council's open data platform</a>. Working on everything from the deployment scripts to the application backend and client-side styling.</p>
-        <aside>
-          <ul>
-            <li><a href="https://www.chef.io/">#Chef</a></li>
-            <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
-            <li><a href="http://ckan.org/">#CKAN</a></li>
-            <li><a href="https://www.python.org/">#Python</a></li>
-          </ul>
-        </aside>
-      </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
 
-      <div class="col-md-3">
-        <h2>3 &times; Bett Award winner</h2>
-        <p>As <a href="http://www.twig-world.com">Twig's</a> Senior Technical Lead for 3 years I was was responsible for planning, architecting and developing their core products including <a href="http://www.twig-world.com">Twig World</a>, <a href="http://www.tigtagworld.co.uk/">Tigtag</a> and the Twig Box.</p>
-        <aside>
-          <ul>
-            <li><a href="https://www.djangoproject.com/">#Django</a></li>
-            <li><a href="https://www.python.org/">#Python</a></li>
-            <li><a href="http://www.videojs.com/">#Video.js</a></li>
-            <li><a href="http://getbootstrap.com/">#Bootstrap</a></li>
-            <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
-          </ul>
-        </aside>
-      </div>
+        <div class="carousel-inner" role="listbox">
+          <div class="row item active">
+            <div class="col-md-4">
+              <img src="https://placeimg.com/300/150/nature" class="img-responsive img-thumbnail" />
+              <h2>Future Cities</h2>
+              <p>I aided in the development of <a href="http://data.glasgow.gov.uk/">Glasgow city council's open data platform</a>. Working on everything from the deployment scripts to the application backend and client-side styling.</p>
+              <aside>
+                <ul>
+                  <li><a href="https://www.chef.io/">#Chef</a></li>
+                  <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
+                  <li><a href="http://ckan.org/">#CKAN</a></li>
+                  <li><a href="https://www.python.org/">#Python</a></li>
+                </ul>
+              </aside>
+            </div>
 
-      <div class="col-md-3">
-        <h2>You are Sauchiehall</h2>
-        <p>With a <i>super</i> tight deadline I helped design, develop and deploy the interactive mapping application for <a href="http://www.sauchiehall.net/">sauchiehall.net</a>. Behind the scenes it uses a REST API powered by Python and Coffeescript.</p>
-        <aside>
-          <ul>
-            <li><a href="https://www.djangoproject.com/">#Django</a></li>
-            <li><a href="https://www.python.org/">#Python</a></li>
-            <li><a href="http://www.django-rest-framework.org/">#REST</a></li>
-            <li><a href="http://coffeescript.org">#Coffeescript</a></li>
-            <li><a href="http://gulpjs.com/">#Gulp</a></li>
-          </ul>
-        </aside>
-      </div>
+            <div class="col-md-4">
+              <img src="https://placeimg.com/300/150/nature" class="img-responsive img-thumbnail" />
+              <h2>3 &times; Bett Award winner</h2>
+              <p>As <a href="http://www.twig-world.com">Twig's</a> Senior Technical Lead for 3 years I was was responsible for planning, architecting and developing their core products including <a href="http://www.twig-world.com">Twig World</a>, <a href="http://www.tigtagworld.co.uk/">Tigtag</a> and the Twig Box.</p>
+              <aside>
+                <ul>
+                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
+                  <li><a href="https://www.python.org/">#Python</a></li>
+                  <li><a href="http://www.videojs.com/">#Video.js</a></li>
+                  <li><a href="http://getbootstrap.com/">#Bootstrap</a></li>
+                  <li><a href="https://www.vagrantup.com/">#Vagrant</a></li>
+                </ul>
+              </aside>
+            </div>
 
-      <div class="col-md-3">
-        <h2>Kala</h2>
-        <p><strong>In development:</strong> Kala is a simple, extensible, opensource replacement for CKAN. Using modern technologies and best practices Kala aims to make it easier than ever for governments and other organisations to share their open data internally or with the world.</p>
-        <aside>
-          <ul>
-            <li><a href="https://www.djangoproject.com/">#Django</a></li>
-            <li><a href="https://www.python.org/">#Python</a></li>
-          </ul>
-        </aside>
+            <div class="col-md-4">
+              <img src="https://placeimg.com/300/150/nature" class="img-responsive img-thumbnail" />
+              <h2>You are Sauchiehall</h2>
+              <p>With a <i>super</i> tight deadline I helped design, develop and deploy the interactive mapping application for <a href="http://www.sauchiehall.net/">sauchiehall.net</a>. Behind the scenes it uses a REST API powered by Python and Coffeescript.</p>
+              <aside>
+                <ul>
+                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
+                  <li><a href="https://www.python.org/">#Python</a></li>
+                  <li><a href="http://www.django-rest-framework.org/">#REST</a></li>
+                  <li><a href="http://coffeescript.org">#Coffeescript</a></li>
+                  <li><a href="http://gulpjs.com/">#Gulp</a></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+
+          <div class="row item">
+            <div class="col-md-4">
+              <img src="https://placeimg.com/300/150/nature" class="img-responsive img-thumbnail" />
+              <h2>Kala</h2>
+              <p><strong>In development:</strong> Kala is a simple, extensible, opensource replacement for CKAN. Using modern technologies and best practices Kala aims to make it easier than ever for governments and other organisations to share their open data internally or with the world.</p>
+              <aside>
+                <ul>
+                  <li><a href="https://www.djangoproject.com/">#Django</a></li>
+                  <li><a href="https://www.python.org/">#Python</a></li>
+                </ul>
+              </aside>
+            </div>
+
+            <div class="col-md-4">
+              <img src="https://placeimg.com/300/150/nature" class="img-responsive img-thumbnail" />
+              <h2>Digital Artisans</h2>
+              <p>A digital community <a href="http://www.artisans.digital/">whose identity is rather tongue in cheek</a>. It has now become the defacto home for the <a href="http://rookieoven.com/">RookieOven</a> co-working space chit-chat. I also sometimes write Slack bots to perform <a href="https://github.com/DigitalArtisans/Gifpybot">important tasks</a>.</p>
+              <aside>
+                <ul>
+                  <li><a href="http://flask.pocoo.org/">#Flask</a></li>
+                  <li><a href="http://slack.com">#Slack</a></li>
+                  <li><a href="https://www.youtube.com/watch?v=cRnhOtRn1a0">#BeardOil</a></li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <p>I’m a digital problem solver. I develop bespoke software solutions, advise on technology strategy, aid in the tendering process and work with companies to scale their business. In a nutshell I use technology to make my client's businesses better.</p>
+      </div>
+    </div>
   </div>
 
     <script src="{{ url_for('static', filename='components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='components/typed.js/dist/typed.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/d3/d3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/trianglify/trianglify.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='components/FitText.js/jquery.fittext.js') }}"></script>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </body>
 </html>

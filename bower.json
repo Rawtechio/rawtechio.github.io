@@ -10,6 +10,10 @@
   "private": true,
   "dependencies": {
     "jquery": "2.1.3",
-    "bootstrap": "3.3.2"
+    "bootstrap": "3.3.2",
+    "typed.js": "*",
+    "trianglify": "0.1.5",
+    "d3": "~3.5.5",
+    "FitText.js": "~1.2.0"
   }
 }
