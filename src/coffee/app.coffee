@@ -71,6 +71,31 @@ class LowPolygonHeader
     $(".lowpoly h1").fitText 1
 
 
+class Map
+
+  key: "AIzaSyBnc-uPScjnFVm4tM2N5Tn9q-UDD2BpnSE"
+  options:
+    zoom: 15
+    center: new google.maps.LatLng 55.8639354, -4.3183053
+    scrollwheel: false
+    navigationControl: false
+    mapTypeControl: false
+    scaleControl: true
+    draggable: true
+    disableDefaultUI: false
+    disableDoubleClickZoom: false
+
+  constructor: ->
+    @map = new google.maps.Map document.getElementById("map"), @options
+
+  addMarker: ->
+    latlngset = new google.maps.LatLng 55.8639354, -4.3183053
+    marker = new google.maps.Marker
+      map: @map,
+      title: "Rawtech.io Limited",
+      position: latlngset,
+
+
 # Page header
 typing = new HeaderText
 lowpoly = new LowPolygonHeader
@@ -85,3 +110,6 @@ do lovelyPeople.go
 setInterval ->
   do lovelyPeople.go
 , 6000
+
+location = new Map
+do location.addMarker

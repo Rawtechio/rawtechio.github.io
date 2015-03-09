@@ -34,6 +34,7 @@
     <link href='{{ url_for('static', filename='components/bootstrap/dist/css/bootstrap.min.css') }}' rel='stylesheet' type='text/css'>
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round' rel='stylesheet' type='text/css'>
+    <link href='{{ url_for('static', filename='iconic/css/iconic-bootstrap.css') }}' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href='{{ url_for('static', filename='css/app.css') }}' rel='stylesheet' type='text/css'>
 
@@ -235,16 +236,44 @@
     </section>
   </div>
 
-  <div id="pita-divider">
+  <footer class="primary">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <p>I’m a digital problem solver. I develop bespoke software solutions, advise on technology strategy, aid in the tendering process and work with companies to scale their business. In a nutshell I use technology to make my client's businesses better.</p>
+          <h4>I’m a digital problem solver. I develop bespoke software solutions, advise on technology strategy, aid in the tendering process and work with companies to scale their business. In a nutshell I use technology to make my client's businesses better.</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <address class="vcard">
+          <div class="col-md-2">
+            <h5 class="org">Rawtech.io Limited</h5>
+            <span class="street-address">Unit 8, Fairfield</span>
+            <span class="street-address">1048 Govan Road</span>
+            <span class="locality">Glasgow</span>
+            <span class="country-name">Scotland</span>
+            <span class="postal-code">G51 4XS</span>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li><i class="iconic iconic-envelope-closed" title="envelope closed" aria-hidden="true"></i> <a href="mailto:aaron@rawtech.io">aaron@rawtech.io</a></li>
+              <li><i class="iconic iconic-iphone" title="iphone" aria-hidden="true"></i> <a href="tel:+447517635819" class="tel">+44 (0)7517635819</a></li>
+              <li><i class="iconic iconic-social-twitter" title="social twitter" aria-hidden="true"></i> <a href="https://twitter.com/rawtechio">@rawtechio</a></li>
+              <li><i class="iconic iconic-social-facebook" title="social facebook" aria-hidden="true"></i> <a href="https://www.facebook.com/rawtechio">facebook.com/rawtechio</a></li>
+              <li><i class="iconic iconic-social-github" title="social github" aria-hidden="true"></i> <a href="https://github.com/Rawtechio/">Rawtech</a></li>
+              <li><i class="iconic iconic-social-github" title="social github" aria-hidden="true"></i> <a href="https://github.com/aaronbassett">Aaron Bassett</a></li>
+              <li><i class="iconic iconic-social-linkedin" title="social linkedin" aria-hidden="true"></i> <a href="https://uk.linkedin.com/in/aaronbassett">LinkedIn</a></li>
+            </ul>
+          </div>
+        </address>
+        <div class="col-md-7">
+          <div id="map"></div>
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true'></script>
     <script src="{{ url_for('static', filename='components/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='components/typed.js/dist/typed.min.js') }}"></script>

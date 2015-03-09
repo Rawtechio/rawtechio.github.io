@@ -1,5 +1,5 @@
 (function() {
-  var HeaderText, LowPolygonHeader, Quotes, lovelyPeople, lowpoly, typing;
+  var HeaderText, LowPolygonHeader, Map, Quotes, location, lovelyPeople, lowpoly, typing;
 
   HeaderText = (function() {
     HeaderText.prototype.span = $("#✓");
@@ -91,6 +91,39 @@
 
   })();
 
+  Map = (function() {
+    Map.prototype.key = "AIzaSyBnc-uPScjnFVm4tM2N5Tn9q-UDD2BpnSE";
+
+    Map.prototype.options = {
+      zoom: 15,
+      center: new google.maps.LatLng(55.8639354, -4.3183053),
+      scrollwheel: false,
+      navigationControl: false,
+      mapTypeControl: false,
+      scaleControl: true,
+      draggable: true,
+      disableDefaultUI: false,
+      disableDoubleClickZoom: false
+    };
+
+    function Map() {
+      this.map = new google.maps.Map(document.getElementById("map"), this.options);
+    }
+
+    Map.prototype.addMarker = function() {
+      var latlngset, marker;
+      latlngset = new google.maps.LatLng(55.8639354, -4.3183053);
+      return marker = new google.maps.Marker({
+        map: this.map,
+        title: "Rawtech.io Limited",
+        position: latlngset
+      });
+    };
+
+    return Map;
+
+  })();
+
   typing = new HeaderText;
 
   lowpoly = new LowPolygonHeader;
@@ -108,5 +141,9 @@
   setInterval(function() {
     return lovelyPeople.go();
   }, 6000);
+
+  location = new Map;
+
+  location.addMarker();
 
 }).call(this);
