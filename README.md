@@ -1,6 +1,6 @@
 # Rawtech.io Limited
 
-Hello! This is the source for the [Rawtech.io website](https://rawtech.io). This is _**not**_ opensource, but please feel free to read the source and hopefully you find something useful. Just don't be a dick and wholesale plagiarize the design or copy. Thanks! :thumbsup:
+Hello! This is the source for the [Rawtech.io website](https://rawtech.io). This is _**not**_ opensource, but please feel free to read the source and hopefully you find something useful. Just don't be a dick and plagiarize the design or copy. Thanks! :thumbsup:
 
 ## Standing on the shoulder's of giants
 
