@@ -35,7 +35,6 @@ class Quotes
       x_gradient: Trianglify.colorbrewer.YlOrRd[9]
       y_gradient: Trianglify.colorbrewer.PuBuGn[9]
       cellsize: 50
-    @pattern = @t.generate document.body.clientWidth, 300
 
   go: ->
     $(@blocks[@index]).animate
@@ -48,6 +47,7 @@ class Quotes
       , 500
 
   renderpolys: ->
+    @pattern = @t.generate document.body.clientWidth, 300
     @wrapper.css 'background-image', @pattern.dataUrl
 
 
@@ -62,9 +62,9 @@ class LowPolygonHeader
       x_gradient: Trianglify.colorbrewer.RdPu[4]
       y_gradient: Trianglify.colorbrewer.YlOrRd[9]
       cellsize: 150
-    @pattern = @t.generate document.body.clientWidth, 350
 
   render: ->
+    @pattern = @t.generate document.body.clientWidth, 350
     @header.css 'background-image', @pattern.dataUrl
 
   text: ->
@@ -106,6 +106,10 @@ do lowpoly.text
 lovelyPeople = new Quotes
 do lovelyPeople.renderpolys
 do lovelyPeople.go
+
+$(window).resize ->
+  do lovelyPeople.renderpolys
+  do lowpoly.render
 
 setInterval ->
   do lovelyPeople.go

@@ -42,7 +42,6 @@
         y_gradient: Trianglify.colorbrewer.PuBuGn[9],
         cellsize: 50
       });
-      this.pattern = this.t.generate(document.body.clientWidth, 300);
     }
 
     Quotes.prototype.go = function() {
@@ -60,6 +59,7 @@
     };
 
     Quotes.prototype.renderpolys = function() {
+      this.pattern = this.t.generate(document.body.clientWidth, 300);
       return this.wrapper.css('background-image', this.pattern.dataUrl);
     };
 
@@ -76,10 +76,10 @@
         y_gradient: Trianglify.colorbrewer.YlOrRd[9],
         cellsize: 150
       });
-      this.pattern = this.t.generate(document.body.clientWidth, 350);
     }
 
     LowPolygonHeader.prototype.render = function() {
+      this.pattern = this.t.generate(document.body.clientWidth, 350);
       return this.header.css('background-image', this.pattern.dataUrl);
     };
 
@@ -137,6 +137,11 @@
   lovelyPeople.renderpolys();
 
   lovelyPeople.go();
+
+  $(window).resize(function() {
+    lovelyPeople.renderpolys();
+    return lowpoly.render();
+  });
 
   setInterval(function() {
     return lovelyPeople.go();
